@@ -2,22 +2,15 @@ package formacaojava;
 
 public class PrimeiraClasseJava {
 	
-	/*
-	 * Main é um método auto executável em Java
-	 * OBS: tudo que eu precisar executar, tenho que chamar dentro do Main
-	 * */
 	public static void main(String[] args) {
 		
 		/*
-		 * CHAT representa uma letra
+		 * STRING em Java sempre será um texto de tamanho qualquer
 		 */
-		char pessoaMasculino = 'M';
-		
-		if(pessoaMasculino == 'M') {
-			System.out.println("Masculino");
-		}else {
-			System.out.println("Feminino");
-		}
+		String nome;
+		String cpf;
+		String telefone;
+		String endereco;
 		
 	}
 	
