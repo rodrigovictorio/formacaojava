@@ -4,17 +4,22 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		int mediaAluno = 70;
-		String nome = "João";
+		int nota1 = 90;
+		int nota2 = 60;
+		int nota3 = 70;
+		int nota4 = 80;
+		int media = 0;
 
-		if (mediaAluno >= 70 && nome.equals("Rodrigo")) {
-			System.out.println("Parabéns, você está aprovado!");
-		} else if (mediaAluno < 70) {
-			System.out.println("Você está reprovado!");
+		media = (nota1 + nota2 + nota3 + nota4) / 4;
+		
+		if (media >= 70) {
+			System.out.println("Aluno aprovado: " + media);
+		} else if (media >= 40 && media <= 69) {
+			System.out.println("Aluno em recuperação: " + media);
 		} else {
-			System.out.println("Aluno não encontrado.");
+			System.out.println("Aluno reprovado: " + media);
 		}
-
-	}
-
+		
+	}	
+	
 }
