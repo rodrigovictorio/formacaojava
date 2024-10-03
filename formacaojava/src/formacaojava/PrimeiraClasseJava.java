@@ -11,7 +11,8 @@ public class PrimeiraClasseJava {
 		int media = 0;
 
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
-		
+		/*Condições lófica com IF e ELSE*/
+		/*
 		if (media >= 70) {
 			System.out.println("Aluno aprovado: " + media);
 		} else if (media >= 40 && media <= 69) {
@@ -19,6 +20,12 @@ public class PrimeiraClasseJava {
 		} else {
 			System.out.println("Aluno reprovado: " + media);
 		}
+		*/
+		
+		/*Operadores ternários são para micro validações*/
+		String saidaResultado = media >= 70 ? "Aluno Aprovado" : "Aluno Reprovado";
+		
+		System.out.println(saidaResultado);
 		
 	}	
 	
