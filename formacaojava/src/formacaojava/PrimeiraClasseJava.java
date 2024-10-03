@@ -23,7 +23,7 @@ public class PrimeiraClasseJava {
 		*/
 		
 		/*Operadores ternários são para micro validações*/
-		String saidaResultado = media >= 70 ? "Aluno Aprovado" : "Aluno Reprovado";
+		String saidaResultado = media >= 70 ? "Aluno Aprovado" : (media >= 40 && media <= 69) ? "Aluno em recuperação" : "Reprovado";
 		
 		System.out.println(saidaResultado);
 		
