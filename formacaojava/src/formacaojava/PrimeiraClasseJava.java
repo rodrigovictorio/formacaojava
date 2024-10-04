@@ -4,36 +4,15 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		/*
-		 * SWITCH CASE: operações extas
-		 */
-		int dia = 4;
-		switch (dia) {
-		case 1:
-			System.out.println("Domingo");
-			break;
-		case 2:
-			System.out.println("Segunda-feira");
-			break;
-		case 3:
-			System.out.println("Terça-feira");
-			break;
-		case 4:
-			System.out.println("Quarta-feira");
-			break;
-		case 5:
-			System.out.println("Quinta-feira");
-			break;
-		case 6:
-			System.out.println("Sexta-feira");
-			break;
-		case 7:
-			System.out.println("Sábado");
-			break;
-		default: System.out.println("Outro dia qualquer");
-			break;
+		int nota1 = 100;
+		int nota2 = 100;
+
+		if (nota1 > nota2) {
+			System.out.println("Nota 1 é maior ou igual.");
+		} else {
+			System.out.println("As notas são iguais.");
 		}
-		
+
 	}
 
 }
