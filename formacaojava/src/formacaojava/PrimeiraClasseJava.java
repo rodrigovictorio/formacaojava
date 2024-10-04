@@ -4,15 +4,21 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		int nota1 = 100;
-		int nota2 = 100;
+		/* Estrutura de repetição: WHILE */
+		int numero = 1;
 
-		if (nota1 > nota2) {
-			System.out.println("Nota 1 é maior ou igual.");
-		} else {
-			System.out.println("As notas são iguais.");
+		while (numero <= 3) {
+			System.out.println("O número atual é " + numero + ".");
+			numero++;
 		}
-
+		
+		/* Estrutura de repetição: DO WHILE */
+		int numero2 = 1;
+		
+		do {
+			System.out.println("O número atual " + numero2 + ".");
+			numero2++;
+		}while(numero2 <= 10);
 	}
 
 }
