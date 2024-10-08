@@ -6,32 +6,19 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros?");
-		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas?");
+		String nota1 = JOptionPane.showInputDialog("Informe a nota 1 ");
+		String nota2 = JOptionPane.showInputDialog("Informe a nota 2 ");
+		String nota3 = JOptionPane.showInputDialog("Informe a nota 3 ");
+		String nota4 = JOptionPane.showInputDialog("Informe a nota 4 ");
 		
-		// convertando STRING em NÚMERO
-		double carroNumero = Double.parseDouble(carros);
-		double pessoaNumero = Double.parseDouble(pessoas);
+		double dNota1 = Double.parseDouble(nota1);
+		double dNota2 = Double.parseDouble(nota2);
+		double dNota3 = Double.parseDouble(nota3);
+		double dNota4 = Double.parseDouble(nota4);
 		
-		int divisao = (int) (carroNumero / pessoaNumero);
+		double media = (dNota1 + dNota2 + dNota3 + dNota4) / 4;
 		
-		double resto = carroNumero % pessoaNumero;
-		
-		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão?");
-		
-		if(resposta == 0) {
-			JOptionPane.showMessageDialog(null, "Divisão para pessoas deu " + divisao);
-		}else {
-			System.out.println("Não quis ver o resultado.");
-		}
-		
-		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o RESTO da divisão?");
-		
-		if(resposta == 0) {
-			JOptionPane.showMessageDialog(null, "O resto da divisão é: " + resto);
-		}else {
-			System.out.println("Não quis ver o resultado.");
-		}
+		JOptionPane.showMessageDialog(null, "A média é igual a " + media);
 		
 	}
 }
