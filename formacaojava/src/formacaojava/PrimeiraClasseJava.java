@@ -4,15 +4,14 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		/* Estrutura de repetição: FOR com break*/
+		/* Estrutura de repetição: FOR e Continue*/
 		for(int numero = 1; numero <= 10; numero++) {
-			System.out.println("Número atual é " + numero + ".");
-			
-			if(numero == 7) {
-				System.out.println("Obaaa, encontramos o número 7");
-				System.out.println("estou parando de executar...");
-				break;
+			if(numero == 3 || numero == 6 || numero == 9) {
+				System.out.println("Oba, encontrei o número " + numero);
+				continue;
 			}
+			
+			System.out.println("Processando laço de repetição");
 		}
 	}
 }
