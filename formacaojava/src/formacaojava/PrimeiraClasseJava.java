@@ -1,16 +1,23 @@
 package formacaojava;
 
+import javax.swing.JOptionPane;
+
 public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
-		/* MÓDULO: Resto da divisão (%) */
+		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros?");
+		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas?");
 		
-		double carro = 9;
-		double pessoa = 2;
-		double resto = carro % pessoa;
+		// convertando STRING em NÚMERO
+		double carroNumero = Double.parseDouble(carros);
+		double pessoaNumero = Double.parseDouble(pessoas);
 		
-		System.out.println("Sobraram exatamente: " + resto + " carros.");
+		int divisao = (int) (carroNumero / pessoaNumero);
+		
+		double resto = carroNumero % pessoaNumero;
+		
+		System.out.println("Divisão para pessoas deu " + divisao + " carros e sobrou " + resto + " carros");
 		
 	}
 }
