@@ -18,7 +18,17 @@ public class PrimeiraClasseJava {
 		
 		double media = (dNota1 + dNota2 + dNota3 + dNota4) / 4;
 		
-		JOptionPane.showMessageDialog(null, "A média é igual a " + media);
+		//Média para aprovação é 70
+		
+		if (media >= 50) {
+			if (media >= 70) {
+				JOptionPane.showMessageDialog(null, "Aluno está aprovado com média de: " + media);
+			}else {
+				JOptionPane.showMessageDialog(null, "Aluno em recuperação com média de: " + media);
+			}
+		}else {
+			JOptionPane.showMessageDialog(null, "Aluno reprovado com média de: " + media);
+		}
 		
 	}
 }
