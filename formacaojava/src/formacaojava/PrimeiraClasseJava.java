@@ -17,7 +17,7 @@ public class PrimeiraClasseJava {
 		
 		double resto = carroNumero % pessoaNumero;
 		
-		System.out.println("Divisão para pessoas deu " + divisao + " carros e sobrou " + resto + " carros");
+		JOptionPane.showMessageDialog(null, "Divisão para pessoas deu " + divisao + " carros e sobrou " + resto + " carros");
 		
 	}
 }
