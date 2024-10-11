@@ -6,6 +6,10 @@ public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
 
+		/*
+		 * - new Aluno() é uma INSTÂNCIA (Criação de OBJETO)
+		 * - aluno1 é uma referência para o OBJETO aluno
+		 */
 		Aluno aluno1 = new Aluno(); // Aqui será o João
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
 		Aluno aluno3 = new Aluno(); // Aqui será o Rodrigo
